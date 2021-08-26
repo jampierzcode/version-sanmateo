@@ -34,6 +34,10 @@ ul {
 }
 
 @media (max-width: 500px) {
+  .bannerTitulo {
+    font-size: 10;
+  }
+
   .boton_orina {
     margin-top: 2.4rem !important;
   }
@@ -97,5 +101,9 @@ ul {
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
+  }
+
+  .bannerTitulo {
+    font-size: 10;
   }
 }

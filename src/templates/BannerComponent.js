@@ -7,7 +7,7 @@ export default function BannerComponent() {
       <header
         className="col jumbotron jumbotron-fluid"
         style={{
-          backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/banner_rutalab_nuevo.jpg")`,
+          backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/sanmateo/banner_laboratorioFaseI.jpg")`,
           backgroundSize: "cover",
           height: "80vh",
           backgroundPosition: "center",
@@ -15,7 +15,7 @@ export default function BannerComponent() {
       >
         <div className="container-fluid">
           <div className="col-6 col-sm-7 justify-content-md-start">
-            <h1 className="display-5 font-weight-bold pt-3 text-start">
+            <h1 className="display-5 font-weight-bold pt-3 text-start bannerTitulo">
               Laboratorio urgente?
               <h3 className="lead display-5 pb-5">
                 Estás en el lugar correcto
