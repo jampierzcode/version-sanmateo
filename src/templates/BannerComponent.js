@@ -5,7 +5,7 @@ export default function BannerComponent() {
   return (
     <div className="row banner d-flex justify-content-start ">
       <header
-        className="col jumbotron jumbotron-fluid"
+        className="col jumbotron jumbotron-fluid bannerFinal"
         style={{
           backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/sanmateo/banner_laboratorioFaseI.4.jpg")`,
           backgroundSize: "cover",
@@ -23,9 +23,9 @@ export default function BannerComponent() {
               Estás en el lugar correcto
             </p>
 
-            <h1 className="font-weight-bold pt-3 text-start proximamente">
-              ¡Próximamente!
-            </h1>
+            <p className="font-weight-bold pt-3 text-start proximamente">
+              Estamos listos a partir del 1º de octubre
+            </p>
             <AnchorLink to="/#somos">
               <button type="button" className="btnSomos btn btn-lg text-white">
                 ¿Quiénes somos?

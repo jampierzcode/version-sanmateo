@@ -3,7 +3,7 @@
 }
 
 .bannerTitulo {
-  font-size: 30px !important;
+  font-size: 35px !important;
   color: black;
 }
 
@@ -14,8 +14,9 @@
 }
 
 .proximamente {
-  font-size: 20px !important;
-  color: white !important;
+  font-size: 25px !important;
+  color: rgb(69, 69, 69) !important;
+  width: 350px;
 }
 
 ul {
@@ -37,7 +38,7 @@ ul {
 }
 
 .btnSomos {
-  background: #022180;
+  background: #0056b7;
 }
 
 @media (max-width: 1100px) {
@@ -52,6 +53,25 @@ ul {
 @media (max-width: 500px) {
   .boton_orina {
     margin-top: 2.4rem !important;
+  }
+
+  .bannerTitulo {
+    font-size: 18px !important;
+    color: black;
+  }
+
+  .lugarCorrecto {
+    font-size: 12px !important;
+    color: black !important;
+    width: 200px;
+    margin-bottom: 120px;
+  }
+
+  .proximamente {
+    font-size: 10px !important;
+    color: rgb(69, 69, 69) !important;
+    width: 130px;
+    padding-top: 200px;
   }
 
   .descarga {
