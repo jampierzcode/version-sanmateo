@@ -7,7 +7,7 @@ export default function BannerComponent() {
       <header
         className="col jumbotron jumbotron-fluid"
         style={{
-          backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/sanmateo/banner_laboratorioFaseI.jpg")`,
+          backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/sanmateo/banner_laboratorioFaseI.4.jpg")`,
           backgroundSize: "cover",
           height: "80vh",
           backgroundPosition: "center",
@@ -15,13 +15,15 @@ export default function BannerComponent() {
       >
         <div className="container-fluid">
           <div className="col-6 col-sm-7 justify-content-md-start">
-            <h1 className="display-5 font-weight-bold pt-3 text-start bannerTitulo">
+            <p className="font-weight-bold pt-3 pb-0 text-start bannerTitulo">
               Laboratorio urgente?
-              <h3 className="lead display-5 pb-5">
-                Estás en el lugar correcto
-              </h3>
-            </h1>
-            <h1 className="display-5 font-weight-bold pt-3 text-start proximamente">
+            </p>
+
+            <p className="lead pb-5 lugarCorrecto">
+              Estás en el lugar correcto
+            </p>
+
+            <h1 className="font-weight-bold pt-3 text-start proximamente">
               ¡Próximamente!
             </h1>
             <AnchorLink to="/#somos">

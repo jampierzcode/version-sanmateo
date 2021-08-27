@@ -2,6 +2,22 @@
   background-color: #f1fcff;
 }
 
+.bannerTitulo {
+  font-size: 30px !important;
+  color: black;
+}
+
+.lugarCorrecto {
+  font-size: 20px !important;
+  color: black !important;
+  margin-top: -10px;
+}
+
+.proximamente {
+  font-size: 20px !important;
+  color: white !important;
+}
+
 ul {
   padding-inline-start: 0px !important;
 }
@@ -34,16 +50,8 @@ ul {
 }
 
 @media (max-width: 500px) {
-  .bannerTitulo {
-    font-size: 10;
-  }
-
   .boton_orina {
     margin-top: 2.4rem !important;
-  }
-
-  .proximamente {
-    font-size: 20px !important;
   }
 
   .descarga {
@@ -101,9 +109,5 @@ ul {
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
-  }
-
-  .bannerTitulo {
-    font-size: 10;
   }
 }

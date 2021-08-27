@@ -7,7 +7,8 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 const NavBarComponent = () => {
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-expand-md navbar-expand-xs navbar-light bg-light"
+      className="navbar navbar-expand-lg navbar-expand-md navbar-expand-xs navbar-light"
+      style={{ backgroundColor: "white" }}
       id="home"
     >
       <div className="col-lg-10 col-sm-6 col-6 col-md-10">
