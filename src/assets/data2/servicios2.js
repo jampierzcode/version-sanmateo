@@ -4,33 +4,47 @@ const servicios = [
     titulo: "Prueba COVID PCR",
     imagen:
       "https://imagenesrutalab.s3.amazonaws.com/sanmateo/servicios/PCR.jpg",
-    precio: 1300,
-    oldPrice: 1600,
+    precio: 799,
+    oldPrice: 999,
     tiempoResultado: 30,
     descripcion:
       "Método específico para determinar la presencia del virus que produce la enfermeda COVID-19 al momento. Idealmente se utiliza en pacientes que presentan síntomas agudos para confirmar la enfermedad. Es recomendada si el paciente tuvo contacto con una persona diagnosticada, incluso si no presenta síntomas; también es solicitada para fines de viajes e intervenciones médicas, entre otras.",
+    descripcioncorta: "Crees tener COVID-19 y tienes o no síntomas.",
+    resultados: "RESULTADOS EN 24 a 72 horas",
+    comentarios:
+      "Esta es la prueba solicitada para fines de viajes e intervenciones médicas, entre otras.",
+    tipoMuestra: "Muestra de nariz y garganta",
   },
   {
     id: "2",
-    titulo: "Biometría Hemática",
+    titulo: "PRUEBA DE ANTÍGENO (prueba rápida)",
     imagen:
-      "https://imagenesrutalab.s3.amazonaws.com/images/biometria/biometriaHematica.jpg",
-    precio: 250,
-    oldPrice: 350,
+      "https://imagenesrutalab.s3.amazonaws.com/sanmateo/servicios/antigeno.jpg",
+    precio: 799,
+    oldPrice: 999,
     tiempoResultado: 30,
     descripcion:
-      "La biometría hemática es un estudio médico también conocido como hemograma. Se centra en observar y examinar la sangre, pero más en específico las células que están presentes en ella, es decir, los glóbulos rojos (eritrocitos), que son los que transportan oxígeno a todo el cuerpo; los glóbulos blancos (leucocitos), nos ayudan a combatir infecciones; y las plaquetas, que tienen como función principal detener hemorragias creando coágulos.",
+      "Método específico para determinar la presencia del virus que produce la enfermeda COVID-19 al momento. Idealmente se utiliza en pacientes que presentan síntomas agudos para confirmar la enfermedad. Es recomendada si el paciente tuvo contacto con una persona diagnosticada, incluso si no presenta síntomas; también es solicitada para fines de viajes e intervenciones médicas, entre otras.",
+    descripcioncorta: "Crees tener COVID-19 y tienes o no síntomas.",
+    resultados: "RESULTADOS EN 30 minutos",
+    comentarios:
+      "Si tu resultado es POSITIVO se confirma COVID-19. Si tu resultado es NEGATIVO es necesario realizar una PRUEBA DE PCR",
+    tipoMuestra: "Muestra de nariz",
   },
   {
     id: "3",
-    titulo: "Prueba de Embarazo",
+    titulo: "PRUEBA DE ANTICUERPOS",
     imagen:
-      "https://imagenesrutalab.s3.amazonaws.com/images/pregnant/embarazoPrueba.jpg",
-    precio: 120,
-    oldPrice: 200,
+      "https://imagenesrutalab.s3.amazonaws.com/sanmateo/servicios/anticuerpos.jpg",
+    precio: 799,
+    oldPrice: 999,
     tiempoResultado: 30,
     descripcion:
-      "Una prueba de embarazo puede indicar si usted está embarazada analizando una hormona específica producida durante el embarazo. La hormona se llama gonadotropina coriónica humana (GCH). La GCH se produce en la placenta de la mujer después de que un óvulo fertilizado se ha implantado en el útero. Normalmente se produce sólo durante el embarazo.",
+      "Método específico para determinar la presencia del virus que produce la enfermeda COVID-19 al momento. Idealmente se utiliza en pacientes que presentan síntomas agudos para confirmar la enfermedad. Es recomendada si el paciente tuvo contacto con una persona diagnosticada, incluso si no presenta síntomas; también es solicitada para fines de viajes e intervenciones médicas, entre otras.",
+    descripcioncorta: "Crees tener COVID-19 y tienes o no síntomas.",
+    resultados: "RESULTADOS EN 24 horas",
+    comentarios: "Prueba post-vacuna o post-infección",
+    tipoMuestra: "Muestra de sangre",
   },
   {
     id: "4",

@@ -3,6 +3,9 @@ import NavBarComponent from "../templates/NavBarComponent";
 import BannerComponent from "../templates/BannerComponent";
 import Body2Component from "../templates/Body2Component";
 import Body3Component from "../templates/Body3Component";
+import Footer from "../templates/Fototer";
+import Copyright from "../templates/Copyright";
+import Reserva from "../templates/Reserva";
 
 // markup
 const IndexPage = () => {
@@ -21,6 +24,9 @@ const IndexPage = () => {
         }
       />
       <Body3Component />
+      <Reserva />
+      <Footer />
+      <Copyright />
     </>
   );
 };

@@ -29,7 +29,7 @@ ul {
 }
 
 .footer {
-  background-color: #022180;
+  background-color: #0056b7;
 }
 
 .copyright {
@@ -43,6 +43,45 @@ ul {
 
 .imagenSomos {
   border-radius: 10% !important;
+}
+
+/*body2component*/
+.containerImagenSomos {
+  margin-bottom: 10px;
+}
+
+.containerbody2 {
+  margin-bottom: 10px;
+}
+
+/*body 3 component*/
+
+.imagenbody3 {
+  border-radius: 10%;
+}
+
+.oldPricebody3 {
+  text-decoration: line-through;
+}
+
+.tituloCard {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.muestraCard {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.resultadosCard {
+  font-weight: 500;
+  color: #0056b7;
+}
+
+.comentariosCard {
+  font-weight: 600;
+  color: #6e6e6e;
 }
 
 @media (max-width: 1100px) {
@@ -111,7 +150,7 @@ ul {
   }
 
   .containerImagenSomos {
-    padding-top: 15px;
+    padding-top: 10px;
   }
 
   /*footer*/
