@@ -1,6 +1,7 @@
 import React from "react";
 import servicios from "../../src/assets/data2/servicios2";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { Link } from "gatsby";
 
 export default function Body3Component() {
   return (
@@ -37,14 +38,14 @@ export default function Body3Component() {
             </p>
           </div>
           <div className="d-flex justify-content-center">
-            <AnchorLink to="/#reserva">
+            <Link to="https://wa.me/5215521293811">
               <button className="btn btn-success btn-dark rounded mt-3">
                 ¡Reserva ya! ${servicios[0].precio}{" "}
                 <h6 className="font-weight-lighter oldPricebody3 pt-1">
                   ${servicios[0].oldPrice}
                 </h6>
               </button>
-            </AnchorLink>
+            </Link>
           </div>
         </div>
         <div className="col-12 col-md-4 pb-4 pl-2 subcontaine2body3">
@@ -69,14 +70,14 @@ export default function Body3Component() {
             </p>
           </div>
           <div className="d-flex justify-content-center">
-            <AnchorLink to="/#reserva">
+            <Link to="https://wa.me/5215521293811">
               <button className="btn btn-success btn-dark rounded mt-3">
                 ¡Reserva ya! ${servicios[1].precio}{" "}
                 <h6 className="font-weight-lighter oldPricebody3 pt-1">
                   ${servicios[1].oldPrice}
                 </h6>
               </button>
-            </AnchorLink>
+            </Link>
           </div>
         </div>
         <div className="col-12 col-md-4 pb-4 pl-2 subcontainer3body3">
@@ -101,14 +102,14 @@ export default function Body3Component() {
             </p>
           </div>
           <div className="d-flex justify-content-center">
-            <AnchorLink to="/#reserva">
+            <Link to="https://wa.me/5215521293811">
               <button className="btn btn-success btn-dark rounded mt-3">
                 ¡Reserva ya! ${servicios[2].precio}{" "}
                 <h6 className="font-weight-lighter oldPricebody3 pt-1">
                   ${servicios[2].oldPrice}
                 </h6>
               </button>
-            </AnchorLink>
+            </Link>
           </div>
         </div>
       </div>
