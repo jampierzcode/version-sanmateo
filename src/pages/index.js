@@ -16,11 +16,11 @@ const IndexPage = () => {
       <Body2Component
         titulo1={"¿Quiénes somos?"}
         text1={
-          "Somos una empresa de laboratorios de Test Clínicos que ofrecen servicios de Primer Mundo a precios accesibles."
+          "Somos una empresa de laboratorios de Test Clínicos comprometida con ofrecer servicios de Primer Mundo a precios accesibles para toda la población."
         }
         titulo2={"¿Cómo podemos dar estos precios?"}
         text2={
-          "Nuestra objetivo es cuidar al paciente y sus ingresos sobre todo en esta etapa de pandemia"
+          "Nuestra misión es cuidar al paciente y sus ingresos sobre todo en esta etapa de pandemia, ofreciendo la mayor confidencialidad y confiabilidad en cada test clínico."
         }
       />
       <Body3Component />
