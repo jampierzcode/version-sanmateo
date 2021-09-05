@@ -28,15 +28,15 @@ export default function Footer() {
                   <small className="text-white">¿Quiénes somos?</small>
                 </li>
               </AnchorLink>
-              <AnchorLink to="/#servicios">
+              <AnchorLink to="/#pruebasCovid">
                 <li className="list-unstyled">
                   <small className="text-white">Servicios COVID</small>
                 </li>
               </AnchorLink>
-              <AnchorLink to="/#funciona">
+              <AnchorLink to="/#reserva">
                 <li className="list-unstyled">
                   <small href="#!" className="text-white">
-                    ¿Cómo funciona?
+                    ¡Reserva ya!
                   </small>
                 </li>
               </AnchorLink>

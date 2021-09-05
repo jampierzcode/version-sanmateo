@@ -5,7 +5,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 export default function Reserva() {
   return (
     <div id="reserva">
-      <section className="jumbotron text-center">
+      <section className="jumbotron text-center" id="reserva">
         <div className="container">
           <h1>¡Reserva ya!</h1>
           <p className="lead text-muted">

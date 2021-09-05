@@ -4,7 +4,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 export default function Body3Component() {
   return (
-    <div className="body3component" id="servicios">
+    <div className="body3component" id="pruebasCovid">
       <div className="pt-4 text-center">
         <h1 className="font-weight-bold">
           Conoce la prueba COVID-19 que necesitas
