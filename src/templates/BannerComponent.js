@@ -19,16 +19,16 @@ export default function BannerComponent() {
               Laboratorio urgente?
             </p>
 
-            <p className="lead pb-5 lugarCorrecto">
-              Estás en el lugar correcto
+            <p className="lead pb-2 lugarCorrecto">
+              Pruebas a domicilio en un click
             </p>
 
-            <p className="font-weight-bold pt-3 text-start proximamente">
+            <p className="font-weight-bold text-start proximamente">
               Estamos listos a partir del 1º de octubre
             </p>
             <AnchorLink to="/#somos">
               <button type="button" className="btnSomos btn btn-lg text-white">
-                ¿Quiénes somos?
+                ¡Reserva ya!
               </button>
             </AnchorLink>
           </div>
