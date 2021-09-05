@@ -4,8 +4,8 @@ const servicios = [
     titulo: "Prueba COVID PCR",
     imagen:
       "https://imagenesrutalab.s3.amazonaws.com/sanmateo/servicios/PCR.jpg",
-    precio: 799,
-    oldPrice: 999,
+    precio: 1800,
+    oldPrice: 2500,
     tiempoResultado: 30,
     descripcion:
       "Método específico para determinar la presencia del virus que produce la enfermeda COVID-19 al momento. Idealmente se utiliza en pacientes que presentan síntomas agudos para confirmar la enfermedad. Es recomendada si el paciente tuvo contacto con una persona diagnosticada, incluso si no presenta síntomas; también es solicitada para fines de viajes e intervenciones médicas, entre otras.",
@@ -20,8 +20,8 @@ const servicios = [
     titulo: "PRUEBA DE ANTÍGENO (prueba rápida)",
     imagen:
       "https://imagenesrutalab.s3.amazonaws.com/sanmateo/servicios/antigeno.jpg",
-    precio: 799,
-    oldPrice: 999,
+    precio: 690,
+    oldPrice: 790,
     tiempoResultado: 30,
     descripcion:
       "Método específico para determinar la presencia del virus que produce la enfermeda COVID-19 al momento. Idealmente se utiliza en pacientes que presentan síntomas agudos para confirmar la enfermedad. Es recomendada si el paciente tuvo contacto con una persona diagnosticada, incluso si no presenta síntomas; también es solicitada para fines de viajes e intervenciones médicas, entre otras.",
