@@ -30,7 +30,7 @@ export default function Footer() {
               </AnchorLink>
               <AnchorLink to="/#servicios">
                 <li className="list-unstyled">
-                  <small className="text-white">Servicios</small>
+                  <small className="text-white">Servicios COVID</small>
                 </li>
               </AnchorLink>
               <AnchorLink to="/#funciona">

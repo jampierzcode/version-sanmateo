@@ -1,5 +1,6 @@
 import React from "react";
 import servicios from "../../src/assets/data2/servicios2";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 export default function Reserva() {
   return (
@@ -12,6 +13,11 @@ export default function Reserva() {
             abastos o haz click en cualquiera de nuestros estudios para
             agendarlo a tu domicilio
           </p>
+          <AnchorLink to="/#reserva">
+            <button className="btn btn-success btn-dark rounded mt-3">
+              ¡Reserva ya!
+            </button>
+          </AnchorLink>
         </div>
       </section>
 
