@@ -8,7 +8,7 @@ const servicios = [
     oldPrice: 2500,
     tiempoResultado: 30,
     descripcion:
-      "Método específico para determinar la presencia del virus que produce la enfermeda COVID-19 al momento. Idealmente se utiliza en pacientes que presentan síntomas agudos para confirmar la enfermedad. Es recomendada si el paciente tuvo contacto con una persona diagnosticada, incluso si no presenta síntomas; también es solicitada para fines de viajes e intervenciones médicas, entre otras.",
+      "Método específico para determinar la presencia del virus. Idealmente se utiliza en pacientes que presentan síntomas agudos para confirmar la enfermedad. Es recomendada si el paciente tuvo contacto con una persona diagnosticada, incluso si no presenta síntomas. Se requiere la recolección de células infectadas de la nasofaringe y orofaringe del paciente mediante un hisopo. Se requiere ayuno de 4- 5 horas.",
     descripcioncorta: "Crees tener COVID-19 y tienes o no síntomas.",
     resultados: "RESULTADOS EN 24 a 72 horas",
     comentarios:
@@ -24,7 +24,7 @@ const servicios = [
     oldPrice: 790,
     tiempoResultado: 30,
     descripcion:
-      "Método específico para determinar la presencia del virus que produce la enfermeda COVID-19 al momento. Idealmente se utiliza en pacientes que presentan síntomas agudos para confirmar la enfermedad. Es recomendada si el paciente tuvo contacto con una persona diagnosticada, incluso si no presenta síntomas; también es solicitada para fines de viajes e intervenciones médicas, entre otras.",
+      "Una prueba rápida de antígenos o prueba rápida es una prueba de diagnóstico rápida adecuada como prueba en el punto de atención que directamente detecta la presencia o ausencia de un antígeno. Se utiliza generalmente para la detección de SARS-CoV-2, el virus que causa COVID-19. Las pruebas rápidas son un tipo de pruebas de flujo lateral que detectan proteínas, lo que las distingue de otras pruebas médicas que detectan anticuerpos (pruebas de anticuerpos) o ácido nucleico (pruebas de ácido nucleico), de tipo laboratorio o punto de atención.",
     descripcioncorta: "Crees tener COVID-19 y tienes o no síntomas.",
     resultados: "RESULTADOS EN 30 minutos",
     comentarios:
@@ -40,7 +40,7 @@ const servicios = [
     oldPrice: 999,
     tiempoResultado: 30,
     descripcion:
-      "Método específico para determinar la presencia del virus que produce la enfermeda COVID-19 al momento. Idealmente se utiliza en pacientes que presentan síntomas agudos para confirmar la enfermedad. Es recomendada si el paciente tuvo contacto con una persona diagnosticada, incluso si no presenta síntomas; también es solicitada para fines de viajes e intervenciones médicas, entre otras.",
+      "Prueba realizada por metodología de electroquimioluminiscencia para la detección de anticuerpos totales cuantitativos anti SARS-CoV-2. También llamada prueba serológica cuantitativa; el resultado indica la cantidad de anticuerpos presentes en la sangre del paciente que se pueden producir como respuesta a la infección por el virus SARS-CoV-2 o por efecto de la vacunación.                                                                                                                                                                                               Se analiza la presencia de inmunoglobulinas IgM (que aparecen entre 7 y 10 días después del contacto con el virus) e IgG (que aparecen entre 10 y 15 días después).",
     descripcioncorta: "Crees tener COVID-19 y tienes o no síntomas.",
     resultados: "RESULTADOS EN 24 horas",
     comentarios: "Prueba post-vacuna o post-infección",

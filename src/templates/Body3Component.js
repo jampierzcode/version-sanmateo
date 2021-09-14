@@ -1,6 +1,5 @@
 import React from "react";
 import servicios from "../../src/assets/data2/servicios2";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { Link } from "gatsby";
 
 export default function Body3Component() {
@@ -38,7 +37,7 @@ export default function Body3Component() {
             </p>
           </div>
           <div className="d-flex justify-content-center">
-            <Link to="https://wa.me/5215521293811">
+            <Link to="https://wa.me/+5215521293811">
               <button className="btn btn-success btn-dark rounded mt-3">
                 ¡Reserva ya! ${servicios[0].precio}{" "}
                 <h6 className="font-weight-lighter oldPricebody3 pt-1">
@@ -70,7 +69,7 @@ export default function Body3Component() {
             </p>
           </div>
           <div className="d-flex justify-content-center">
-            <Link to="https://wa.me/5215521293811">
+            <Link to="https://wa.me/+5215521293811">
               <button className="btn btn-success btn-dark rounded mt-3">
                 ¡Reserva ya! ${servicios[1].precio}{" "}
                 <h6 className="font-weight-lighter oldPricebody3 pt-1">
@@ -102,7 +101,7 @@ export default function Body3Component() {
             </p>
           </div>
           <div className="d-flex justify-content-center">
-            <Link to="https://wa.me/5215521293811">
+            <Link to="https://wa.me/+5215521293811">
               <button className="btn btn-success btn-dark rounded mt-3">
                 ¡Reserva ya! ${servicios[2].precio}{" "}
                 <h6 className="font-weight-lighter oldPricebody3 pt-1">

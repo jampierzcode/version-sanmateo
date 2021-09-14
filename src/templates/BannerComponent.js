@@ -26,7 +26,7 @@ export default function BannerComponent() {
             <p className="font-weight-bold text-start proximamente">
               Estamos listos a partir del 1º de octubre
             </p>
-            <Link to="https://wa.me/5215521293811">
+            <Link to="https://wa.me/+5215521293811">
               <button type="button" className="btnSomos btn btn-lg text-white">
                 ¡Reserva ya!
               </button>
