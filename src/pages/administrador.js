@@ -4,7 +4,7 @@ import * as React from "react";
 const Administrador = () => {
   return (
     <>
-      <h1>hola</h1>
+      <h1>hola administrador con cambios</h1>
     </>
   );
 };
