@@ -48,6 +48,13 @@ export default function Footer() {
                   </small>
                 </li>
               </Link>
+              <Link to="/privacidad">
+                <li className="list-unstyled">
+                  <small href="#!" className="text-white">
+                    Privacidad
+                  </small>
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
