@@ -1,5 +1,6 @@
 import React from "react";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { Link } from "gatsby";
 
 export default function Footer() {
   return (
@@ -40,6 +41,13 @@ export default function Footer() {
                   </small>
                 </li>
               </AnchorLink>
+              <Link to="/administrador">
+                <li className="list-unstyled">
+                  <small href="#!" className="text-white">
+                    Administrador
+                  </small>
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
