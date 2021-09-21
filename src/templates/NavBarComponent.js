@@ -14,13 +14,13 @@ const NavBarComponent = () => {
       <div className="col-lg-10 col-sm-6 col-6 col-md-10">
         <AnchorLink to="/#home" title="Our team" className="navbar-brand">
           <img
-            src={imagenLogo}
+            src="https://imagenesrutalab.s3.amazonaws.com/sanmateo/logo/logo_sanmateo_final.jpg"
             width="50"
             alt="Rutalab"
             className="imagen_logo"
           />
           <img
-            src={nombreLogo}
+            src="https://imagenesrutalab.s3.amazonaws.com/sanmateo/logo/nombre_sanmateo_final+copy.png"
             alt="laboratorio"
             width="150"
             className="nombre_logo"

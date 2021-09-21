@@ -1,14 +1,19 @@
-import * as React from "react";
+import React, { useState } from "react";
 import NavBarComponent from "../templates/NavBarComponent";
 import BannerComponent from "../templates/BannerComponent";
 import Body2Component from "../templates/Body2Component";
 import Body3Component from "../templates/Body3Component";
+import Cookies from "../components/Cookies";
 import Footer from "../templates/Fototer";
 import Copyright from "../templates/Copyright";
 import Reserva from "../templates/Reserva";
 
 // markup
 const IndexPage = () => {
+  const [cookies, setCookies] = useState(true);
+  const handlecookies = () => {
+    setCookies(false);
+  };
   return (
     <>
       <NavBarComponent />
@@ -26,6 +31,11 @@ const IndexPage = () => {
       <Body3Component />
       <Reserva />
       <Footer />
+      {cookies ? (
+        <Cookies cookies={cookies} handlecookies={handlecookies} />
+      ) : (
+        <div></div>
+      )}
       <Copyright />
     </>
   );
