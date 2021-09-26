@@ -1,7 +1,5 @@
 // import { Link } from "gatsby";
 import React from "react";
-import imagenLogo from "../images/logo_sanmateo_final.jpg";
-import nombreLogo from "../images/nombre_sanmateo_final copy.png";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const NavBarComponent = () => {
