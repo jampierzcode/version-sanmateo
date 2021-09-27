@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/registro.css";
 
-const Registros = () => {
+const Registros = (props) => {
+  const { navSidebar, show_sidebar } = props;
   return (
     <>
-      <div className="container-dashboard">
+      <div
+        className={`container-dashboard ${!navSidebar ? "close_sidebar" : ""}`}
+      >
         <h1 className="name-link">Alta de orden de trabajo</h1>
         <div className="container-registers">
           <h1 className="row-title">Datos del paciente</h1>

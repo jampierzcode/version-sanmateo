@@ -5,15 +5,14 @@ const SubMenu = ({ item, index }) => {
   const [subnav, setSubnav] = useState(false);
   const showSubnav = () => {
     setSubnav(!subnav);
-    console.log("subnav");
   };
   return (
     <>
       <li className="links-menu-dashboard" onClick={item.subNav && showSubnav}>
-        <div className="link-block">
+        <div className={`link-block ${subnav ? "link-active" : ""}`}>
           <div className="left-link">
             <Link className="toggle-drop" to={item.path}>
-              {item.icon} {item.title}
+              {item.icon} <p>{item.title}</p>
             </Link>
           </div>
           {item.subNav && subnav ? (
@@ -29,7 +28,7 @@ const SubMenu = ({ item, index }) => {
                 console.log(item.title);
                 return (
                   <li className="link-submenu">
-                    <a className="dropdown-item" href="#" key={index}>
+                    <a className="dropdown-items" href="#" key={index}>
                       {item.icon} {item.title}
                     </a>
                   </li>

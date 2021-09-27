@@ -1,16 +1,34 @@
-import React from "react";
-
-import { Link } from "gatsby";
+import React, { useState } from "react";
+import NavDashboard from "./navDashboard";
 import "../styles/sidebarDashboard.css";
 import { SidebarData } from "./SidebarData";
 import SubMenu from "./SubMenu";
-const navDashboard = () => {
-  const show_sub_menu = () => {
-    alert("click");
-  };
+const SidebarDashboard = (props) => {
+  const { navSidebar, show_sidebar } = props;
+
+  const logo =
+    "https://imagenesrutalab.s3.amazonaws.com/sanmateo/logo/logo_sanmateo_final.jpg";
+  const logo_name =
+    "https://imagenesrutalab.s3.amazonaws.com/sanmateo/logo/nombre_sanmateo_final+copy.png";
+
   return (
     <>
-      <aside className="aside-dashboard">
+      <div
+        className={`overlay-sidebar ${
+          !navSidebar ? "overlay-sidebar-show" : ""
+        }`}
+        onClick={show_sidebar}
+      ></div>
+      <NavDashboard navSidebar={navSidebar} show_sidebar={show_sidebar} />
+      <aside
+        className={`aside-dashboard ${!navSidebar ? "closed_sidebar" : ""}`}
+      >
+        <div className="header-aside">
+          <div className="logo">
+            <img src={logo} alt="logo-img" className="logo-icon" />
+            <img src={logo_name} alt="logo-img" className="logo-name" />
+          </div>
+        </div>
         <div className="main">
           <ul className="nav-links">
             {SidebarData.map((item, index) => {
@@ -18,63 +36,9 @@ const navDashboard = () => {
             })}
           </ul>
         </div>
-        {/* <div className="main">
-          <ul className="nav-links">
-            <li className="links-menu-dashboard" onClick={show_sub_menu}>
-              <Link className="link-active-d toggle-drop">
-                <div className="left-link">
-                  <FaChartPie /> Registros
-                </div>
-                <div className="right-link">
-                  <FaAngleDown />
-                </div>
-              </Link>
-              <ul className="submenu-nav">
-                <li className="link-submenu">
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li className="link-submenu">
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li className="link-submenu">
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li className="links-menu-dashboard">
-              <Link className="toggle-drop">
-                <div className="left-link">
-                  <FaRegFileAlt /> Generate PDF
-                </div>
-              </Link>
-            </li>
-            <li className="links-menu-dashboard">
-              <Link className="toggle-drop">
-                <div className="left-link">
-                  <FaShoppingBag /> Sales
-                </div>
-              </Link>
-            </li>
-            <li className="links-menu-dashboard">
-              <Link className="toggle-drop">
-                <div className="left-link">
-                  <FaRegEnvelope /> Messages
-                </div>
-              </Link>
-            </li>
-          </ul>
-        </div>
-       */}
       </aside>
     </>
   );
 };
 
-export default navDashboard;
+export default SidebarDashboard;

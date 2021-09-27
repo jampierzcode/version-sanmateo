@@ -1,11 +1,9 @@
 .container-dashboard {
-  position: absolute;
-  width: calc(100% - 250px);
-  top: 70px;
-  left: 250px;
-  min-height: calc(100vh - 70px);
+  margin-left: 250px;
   background: #f5f7fb;
-  padding: 40px 60px;
+  padding: 110px 60px;
+  min-height: calc(100vh);
+  transition: margin-left 0.5s;
 }
 .name-link {
   font-size: 20px;
