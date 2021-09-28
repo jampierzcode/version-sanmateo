@@ -21,11 +21,10 @@ const SubMenu = ({ item, index }) => {
             <div className="right-link">{item.iconClosed}</div>
           ) : null}
         </div>
-        {subnav && item.subNav ? (
-          <ul className="submenu-nav">
-            {subnav &&
+        {item.subNav ? (
+          <ul className={`submenu-nav ${subnav ? "show-menu" : ""}`}>
+            {item.subNav &&
               item.subNav.map((item, index) => {
-                console.log(item.title);
                 return (
                   <li className="link-submenu">
                     <a className="dropdown-items" href="#" key={index}>

@@ -5,7 +5,8 @@ import { SidebarData } from "./SidebarData";
 import SubMenu from "./SubMenu";
 const SidebarDashboard = (props) => {
   const { navSidebar, show_sidebar } = props;
-
+  const avatar_user =
+    "https://image.freepik.com/foto-gratis/hombre-joven-sonriente-playa_23-2147645587.jpg";
   const logo =
     "https://imagenesrutalab.s3.amazonaws.com/sanmateo/logo/logo_sanmateo_final.jpg";
   const logo_name =
@@ -30,6 +31,10 @@ const SidebarDashboard = (props) => {
           </div>
         </div>
         <div className="main">
+          <div className="perfil-user">
+            <img src={avatar_user} alt="img_avatar_user" />
+            <p>Jampier Smith Vasquez Mija</p>
+          </div>
           <ul className="nav-links">
             {SidebarData.map((item, index) => {
               return <SubMenu item={item} key={index} />;

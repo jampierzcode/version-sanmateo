@@ -1,34 +1,51 @@
 import React from "react";
-import { FaChartPie } from "react-icons/fa";
-import { FaRegFileAlt } from "react-icons/fa";
-import { FaShoppingBag } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
+import { FaSortAmountUpAlt } from "react-icons/fa";
+import { FaUserCog } from "react-icons/fa";
+import { FaCogs } from "react-icons/fa";
+import { FaUserInjured } from "react-icons/fa";
+import { FaUserMd } from "react-icons/fa";
+import { FaVial } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa";
-import { FaRegEnvelope } from "react-icons/fa";
+import { FaRegChartBar } from "react-icons/fa";
 export const SidebarData = [
   {
     title: "Registros",
     path: "/registros",
-    icon: <FaChartPie />,
+    icon: <FaUserMd />,
     iconClosed: <FaAngleDown />,
     iconOpened: <FaAngleUp />,
     subNav: [
       {
-        title: "Users",
+        title: "Pacientes",
         path: "/resgistros/users",
-        icon: <FaChartPie />,
+        icon: <FaUserInjured />,
       },
       {
-        title: "Levantar Orden",
+        title: "Test / Orden",
         path: "/resgistros/orden",
-        icon: <FaRegFileAlt />,
+        icon: <FaVial />,
       },
     ],
   },
   {
+    title: "Levantar Orden",
+    path: "/levantar_orden",
+    icon: <FaSortAmountUpAlt />,
+    iconClosed: <FaAngleDown />,
+    iconOpened: <FaAngleUp />,
+  },
+  {
     title: "Reportes",
     path: "/reportes",
-    icon: <FaRegFileAlt />,
+    icon: <FaRegChartBar />,
+    iconClosed: <FaAngleDown />,
+    iconOpened: <FaAngleUp />,
+  },
+  {
+    title: "Configuracion",
+    path: "/settings",
+    icon: <FaCogs />,
     iconClosed: <FaAngleDown />,
     iconOpened: <FaAngleUp />,
   },
