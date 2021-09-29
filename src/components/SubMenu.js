@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 const SubMenu = ({ item, index }) => {
-  console.log(item.subNav);
   const [subnav, setSubnav] = useState(false);
   const showSubnav = () => {
     setSubnav(!subnav);
   };
   return (
     <>
-      <li className="links-menu-dashboard" onClick={item.subNav && showSubnav}>
+      <li
+        key={index}
+        className="links-menu-dashboard"
+        onClick={item.subNav && showSubnav}
+      >
         <div className={`link-block ${subnav ? "link-active" : ""}`}>
           <div className="left-link">
             <Link className="toggle-drop" to={item.path}>
@@ -27,9 +30,9 @@ const SubMenu = ({ item, index }) => {
               item.subNav.map((item, index) => {
                 return (
                   <li className="link-submenu">
-                    <a className="dropdown-items" href="#" key={index}>
+                    <Link to={item.path} className="dropdown-items" key={index}>
                       {item.icon} {item.title}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}

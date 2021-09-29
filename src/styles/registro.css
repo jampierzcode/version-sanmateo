@@ -13,6 +13,7 @@
 .container-registers {
   width: 100%;
   height: max-content;
+  margin-bottom: 20px;
 }
 .container-registers .row-title {
   font-size: 16px;
@@ -70,4 +71,24 @@ select:focus {
     row-gap: 20px;
     grid-template-columns: repeat(1, 1fr) !important;
   }
+}
+.MuiPaper-elevation2 {
+  box-shadow: none !important;
+}
+.MuiPaper-rounded {
+  background: transparent !important;
+}
+.MuiMenu-paper {
+  background: #fff !important;
+}
+.MuiTableCell-root {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+.MTableHeader-header-13 {
+  white-space: nowrap;
+}
+.show-register {
+  margin-bottom: 20px;
+  margin-right: 10px;
 }

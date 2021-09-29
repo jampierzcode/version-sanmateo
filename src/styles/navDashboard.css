@@ -13,6 +13,7 @@
   border-left: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
   transition: margin-left 0.5s;
+  z-index: 2000;
 }
 @media (max-width: 991.98px) {
   .navbar-dashboard {

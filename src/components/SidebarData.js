@@ -18,12 +18,12 @@ export const SidebarData = [
     subNav: [
       {
         title: "Pacientes",
-        path: "/resgistros/users",
+        path: "/RegisterClients",
         icon: <FaUserInjured />,
       },
       {
         title: "Test / Orden",
-        path: "/resgistros/orden",
+        path: "/RegisterOrden",
         icon: <FaVial />,
       },
     ],
