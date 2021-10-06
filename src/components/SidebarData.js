@@ -4,29 +4,25 @@ import { FaSortAmountUpAlt } from "react-icons/fa";
 import { FaUserCog } from "react-icons/fa";
 import { FaCogs } from "react-icons/fa";
 import { FaUserInjured } from "react-icons/fa";
-import { FaUserMd } from "react-icons/fa";
+import { IoPieChartSharp } from "react-icons/io5";
 import { FaVial } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa";
 import { FaRegChartBar } from "react-icons/fa";
 export const SidebarData = [
   {
-    title: "Registros",
-    path: "/registros",
-    icon: <FaUserMd />,
-    iconClosed: <FaAngleDown />,
-    iconOpened: <FaAngleUp />,
-    subNav: [
-      {
-        title: "Pacientes",
-        path: "/RegisterClients",
-        icon: <FaUserInjured />,
-      },
-      {
-        title: "Test / Orden",
-        path: "/RegisterOrden",
-        icon: <FaVial />,
-      },
-    ],
+    title: "OverView",
+    path: "/administrador",
+    icon: <IoPieChartSharp />,
+  },
+  {
+    title: "Pacientes",
+    path: "/RegisterClients",
+    icon: <FaUserInjured />,
+  },
+  {
+    title: "Test / Orden",
+    path: "/RegisterOrden",
+    icon: <FaVial />,
   },
   {
     title: "Levantar Orden",

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import SidebarDashboard from "../components/sidebarDashboard";
-import Registros from "../components/Registros";
 // import Tickets from "../components/Tickets";
 // import Carousel from "react-bootstrap/Carousel";
 // markup
@@ -12,7 +11,9 @@ const Administrador = () => {
   return (
     <>
       <SidebarDashboard navSidebar={navSidebar} show_sidebar={show_sidebar} />
-      <Registros navSidebar={navSidebar} show_sidebar={show_sidebar} />
+      <div className="container-dashboard">
+        <h1>Perfil OverView</h1>
+      </div>
     </>
   );
 };

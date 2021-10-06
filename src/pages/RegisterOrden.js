@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import SidebarDashboard from "../components/sidebarDashboard";
 import MaterialTable from "material-table";
 import { FaPlus } from "react-icons/fa";
-import { DataClientes } from "../components/DataClientes";
+import { DataOrdenes } from "../components/DataOrdenes";
 // import "../components/IconsMaterialTable";
 // ICONOS PARA LA TABLA MATERIAL TABLE
 import { forwardRef } from "react";
@@ -67,14 +67,14 @@ const RegisterOrden = () => {
   //   }, []);
 
   // Generar PDF con jsPDF
-  const generatePDF = () => {
-    var doc = new jsPDF("p", "pt", "a4");
-    doc.html(document.querySelector("#register-orden"), {
-      callback: function (pdf) {
-        pdf.save("ordenes.pdf");
-      },
-    });
-  };
+  // const generatePDF = () => {
+  //   var doc = new jsPDF("p", "pt", "a4");
+  //   doc.html(document.querySelector("#register-orden"), {
+  //     callback: function (pdf) {
+  //       pdf.save("ordenes.pdf");
+  //     },
+  //   });
+  // };
   // fin de generar pdf
 
   // fin de api de codigos postales
@@ -83,41 +83,53 @@ const RegisterOrden = () => {
     setNavSidebar(!navSidebar);
   };
   const [show_register, setShow_register] = useState(false);
-  const [tabledata, setTableData] = useState(DataClientes);
+  const [tabledata, setTableData] = useState(DataOrdenes);
   const columns = [
     {
-      title: "Nombres y Apellidos",
-      field: "name",
+      title: "# Orden",
+      field: "orden",
       defaultSort: "asc",
-      filterPlaceholder: "Bucar por nombre",
+      filterPlaceholder: "Bucar por #orden",
     },
-    { title: "edad", field: "edad", filterPlaceholder: "Bucar por edad" },
     {
-      title: "direccion",
-      field: "direccion",
-      filterPlaceholder: "Bucar por direccion",
+      title: "Fecha",
+      field: "fecha",
+      filterPlaceholder: "Bucar por fecha",
     },
-    { title: "email", field: "email", filterPlaceholder: "Bucar por email" },
     {
-      title: "telefono",
-      field: "telefono",
-      filterPlaceholder: "Bucar por telefono",
+      title: "Hora",
+      field: "hora",
+      FilterList: false,
+    },
+    {
+      title: "Paciente",
+      field: "paciente",
+      filterPlaceholder: "Bucar por nombre del paciente",
+    },
+    {
+      title: "Servicio",
+      field: "servicio",
+    },
+    {
+      title: "Medico",
+      field: "medico",
+    },
+    {
+      title: "Status",
+      field: "status",
+    },
+    {
+      title: "Pdf",
+      field: "pdf",
     },
   ];
 
   //   Formulario
   //  ---- obtencion de los datos por onchange
-  const [name, setName] = useState("");
-  const [lastname, seTlastname] = useState("");
-  const [gender, setGender] = useState("");
-  const [estados, setEstados] = useState("");
-  const [date, setDate] = useState("");
-  const [calle, setCalle] = useState("");
-  const [number_ext, setNumber_ext] = useState("");
-  const [number_int, setNumber_int] = useState("");
-  const [municipalidad, setMunicipalidad] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
+  const [orden, setOrden] = useState("");
+  const [paciente, setPaciente] = useState("");
+  const [servicio, setServicio] = useState("");
+  const [medico, setMedico] = useState("");
 
   //   reset formulario y esconder
 
@@ -125,20 +137,12 @@ const RegisterOrden = () => {
     console.log("refresh");
   };
 
-  const sendDates = (event) => {
+  const sendDates = () => {
     console.log("aqui iran los datos");
-    console.log(
-      name,
-      date,
-      lastname,
-      estados,
-      municipalidad,
-      gender,
-      email,
-      phone,
-      number_ext,
-      number_int
-    );
+    let orden = document.querySelector("#orden");
+    let n_orden = orden.value;
+    setOrden(n_orden);
+    console.log(n_orden, medico, servicio, paciente);
   };
   // ---- fin de obtencion de los datos por onchange
   return (
@@ -149,7 +153,7 @@ const RegisterOrden = () => {
         id="register-orden"
         className={`container-dashboard ${!navSidebar ? "close_sidebar" : ""}`}
       >
-        <h1 className="name-link">Mis Clientes</h1>
+        <h1 className="name-link">Ordenes</h1>
         <div className="container-registers">
           {!show_register ? (
             <button
@@ -163,144 +167,61 @@ const RegisterOrden = () => {
           ) : null}
           {show_register ? (
             <>
-              <h1 className="row-title">Datos del paciente</h1>
+              <h1 className="row-title">Detalle de orden</h1>
               <div className="dates-row-4">
                 <div className="group-date">
-                  <span>Nombres</span>
+                  <span>#Orden</span>
                   <input
-                    name="name"
+                    id="orden"
+                    name="orden"
                     type="text"
                     className="control-form"
-                    placeholder="Ingresa el nombre del paciente"
-                    onChange={(e) => {
-                      setName(e.target.value);
-                    }}
+                    value="0051"
+                    disabled
                   />
                 </div>
                 <div className="group-date">
-                  <span>Apellidos</span>
-                  <input
-                    name="lastname"
-                    type="text"
-                    className="control-form"
-                    placeholder="Ingresa los apellidos del paciente"
-                    onChange={(e) => {
-                      seTlastname(e.target.value);
-                    }}
-                  />
-                </div>
-                <div className="group-date">
-                  <span>Genero</span>
+                  <span>Paciente</span>
                   <select
-                    name="gender"
-                    id="genero"
+                    name="paciente"
+                    id="paciente"
                     onChange={(e) => {
-                      setGender(e.target.value);
+                      setPaciente(e.target.value);
                     }}
                   >
-                    <option value="0">Hombre</option>
-                    <option value="1">Mujer</option>
+                    <option value="0">Seleccione un paciente</option>
+                    <option value="1">Juan Mejia Vasquez</option>
+                    <option value="2">Hector el loco juan</option>
                   </select>
                 </div>
                 <div className="group-date">
-                  <span>Fecha de nacimiento</span>
-                  <input
-                    name="date"
-                    type="date"
-                    className="control-form"
-                    onChange={(e) => {
-                      setDate(e.target.value);
-                    }}
-                  />
-                </div>
-                <div className="group-date">
-                  <span>Calle</span>
-                  <input
-                    name="calle"
-                    type="text"
-                    className="control-form"
-                    placeholder="Nombre de la calle"
-                    onChange={(e) => {
-                      setCalle(e.target.value);
-                    }}
-                  />
-                </div>
-                <div className="group-date">
-                  <span>Numero exterior</span>
-                  <input
-                    name="number_ext"
-                    type="number"
-                    className="control-form"
-                    placeholder="Numero exterior"
-                    onChange={(e) => {
-                      setNumber_ext(e.target.value);
-                    }}
-                  />
-                </div>
-                <div className="group-date">
-                  <span>Numero interior</span>
-                  <input
-                    name="number_int"
-                    type="number"
-                    className="control-form"
-                    placeholder="Numero interior"
-                    onChange={(e) => {
-                      setNumber_int(e.target.value);
-                    }}
-                  />
-                </div>
-                <div className="group-date">
-                  <span>Estados</span>
+                  <span>Servicio</span>
                   <select
-                    name="estados"
-                    id="municipalidad"
+                    name="servicio"
+                    id="servicio"
                     onChange={(e) => {
-                      setEstados(e.target.value);
+                      setServicio(e.target.value);
                     }}
                   >
-                    {/* {estados.map((item, index) => {
-                      <option value={item.entidad}>{item.entidad}</option>;
-                    })} */}
+                    <option value="0">Seleccione un Servicio</option>
+                    <option value="1">Prueba Covid 2019</option>
+                    <option value="2">Test de Embarazo</option>
                   </select>
                 </div>
                 <div className="group-date">
-                  <span>Municipalidad / Alcaldia</span>
+                  <span>Medico</span>
                   <select
-                    name="municipalidad"
-                    id="municipalidad"
+                    name="medico"
+                    id="medico"
                     onChange={(e) => {
-                      setMunicipalidad(e.target.value);
+                      setMedico(e.target.value);
                     }}
                   >
-                    <option value="0">OAXCA</option>
-                    <option value="1">Ciudad de MXN</option>
+                    <option value="0">Seleccione un medico</option>
+                    <option value="1">Hector Emilio velasquez</option>
+                    <option value="2">Jampier Smith Vasquez Mija</option>
+                    <option value="3">Jos Francisco Espinoza Ramos</option>
                   </select>
-                </div>
-
-                <div className="group-date">
-                  <span>Telefono</span>
-                  <input
-                    name="phone"
-                    type="number"
-                    className="control-form"
-                    placeholder="Ingresa el numero de telefono"
-                    onChange={(e) => {
-                      setPhone(e.target.value);
-                    }}
-                  />
-                </div>
-
-                <div className="group-date">
-                  <span>Email</span>
-                  <input
-                    name="email"
-                    type="email"
-                    className="control-form"
-                    placeholder="Ingresa el @correo electronico"
-                    onChange={(e) => {
-                      setEmail(e.target.value);
-                    }}
-                  />
                 </div>
               </div>
               <button
@@ -324,13 +245,13 @@ const RegisterOrden = () => {
             </>
           ) : null}
         </div>
-        <button className="btn btn-primary" onClick={generatePDF}>
+        {/* <button className="btn btn-primary" onClick={generatePDF}>
           Generate PDF
-        </button>
+        </button> */}
         <MaterialTable
           columns={columns}
           data={tabledata}
-          title="Lista de Clientes"
+          title="Lista de ordenes"
           icons={tableIcons}
           options={{
             filtering: true,

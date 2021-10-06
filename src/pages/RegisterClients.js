@@ -3,6 +3,7 @@ import SidebarDashboard from "../components/sidebarDashboard";
 import MaterialTable from "material-table";
 import { FaPlus } from "react-icons/fa";
 import { DataClientes } from "../components/DataClientes";
+import "../styles/registro.css";
 // import "../components/IconsMaterialTable";
 // ICONOS PARA LA TABLA MATERIAL TABLE
 import { forwardRef } from "react";
@@ -115,7 +116,7 @@ const RegisterClients = () => {
     console.log("refresh");
   };
 
-  const sendDates = (event) => {
+  const sendDates = () => {
     console.log("aqui iran los datos");
     console.log(
       name,
