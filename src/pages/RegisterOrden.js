@@ -22,7 +22,7 @@ import SaveAlt from "@material-ui/icons/SaveAlt";
 import Search from "@material-ui/icons/Search";
 import ViewColumn from "@material-ui/icons/ViewColumn";
 import axios from "axios";
-
+import jsPDF from "jspdf";
 const tableIcons = {
   Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
   Check: forwardRef((props, ref) => <Check {...props} ref={ref} />),
@@ -49,7 +49,7 @@ const tableIcons = {
 
 // FIN DE ICONOS
 
-const RegisterClients = () => {
+const RegisterOrden = () => {
   // api de codigos postales
 
   //   useEffect(() => {
@@ -66,8 +66,18 @@ const RegisterClients = () => {
   //     getEstados();
   //   }, []);
 
+  // Generar PDF con jsPDF
+  const generatePDF = () => {
+    var doc = new jsPDF("p", "pt", "a4");
+    doc.html(document.querySelector("#register-orden"), {
+      callback: function (pdf) {
+        pdf.save("ordenes.pdf");
+      },
+    });
+  };
+  // fin de generar pdf
+
   // fin de api de codigos postales
-  var estados_parser;
   const [navSidebar, setNavSidebar] = useState(true);
   const show_sidebar = () => {
     setNavSidebar(!navSidebar);
@@ -136,6 +146,7 @@ const RegisterClients = () => {
       <SidebarDashboard navSidebar={navSidebar} show_sidebar={show_sidebar} />
 
       <div
+        id="register-orden"
         className={`container-dashboard ${!navSidebar ? "close_sidebar" : ""}`}
       >
         <h1 className="name-link">Mis Clientes</h1>
@@ -313,7 +324,9 @@ const RegisterClients = () => {
             </>
           ) : null}
         </div>
-
+        <button className="btn btn-primary" onClick={generatePDF}>
+          Generate PDF
+        </button>
         <MaterialTable
           columns={columns}
           data={tabledata}
@@ -328,7 +341,7 @@ const RegisterClients = () => {
             showFirstLastPageButtons: false,
             exportButton: true,
             exportAllData: true,
-            exportFileName: "Mis Clientes",
+            exportFileName: "Mis Ordenes",
             selection: true,
           }}
         />
@@ -337,4 +350,4 @@ const RegisterClients = () => {
   );
 };
 
-export default RegisterClients;
+export default RegisterOrden;
