@@ -1,4 +1,4 @@
-export const DataOrdenes = [
+export const DataOrdenesToday = [
   {
     orden: "00150",
     fecha: "2020/05/12",
@@ -7,7 +7,7 @@ export const DataOrdenes = [
     servicio: "Prueva Covid 19",
     medico: "Hector Emilio Velasquez",
     status: "Creado",
-    pdf: "null",
+    link: "Ver mas",
   },
   {
     orden: "00151",
@@ -17,7 +17,7 @@ export const DataOrdenes = [
     servicio: "Prueba de embarazo",
     medico: "Hector Emilio Velasquez",
     status: "En camino",
-    pdf: "null",
+    link: "Ver mas",
   },
   {
     orden: "00151",
@@ -26,7 +26,7 @@ export const DataOrdenes = [
     paciente: "Jampier Smith Vasquez Mija",
     servicio: "Prueba de covid",
     medico: "Hector Emilio Velasquez",
-    status: "completado",
-    pdf: "report_muestra66598515v56.pdf",
+    status: "Completado",
+    link: "Ver mas",
   },
 ];

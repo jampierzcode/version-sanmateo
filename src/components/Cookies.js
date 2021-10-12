@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-
+import React from "react";
 import "../styles/cookies.css";
 const Cookies = (props) => {
-  const { cookies, handlecookies } = props;
+  const { handlecookies } = props;
   return (
     <>
       <div className="cookies">
@@ -23,7 +22,7 @@ const Cookies = (props) => {
               Aceptar cookies
             </button>
 
-            <a href="#">Aviso de cookies</a>
+            <a href="/cookies.js">Aviso de cookies</a>
           </div>
         </div>
       </div>

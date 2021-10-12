@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import NavDashboard from "./navDashboard";
 import "../styles/sidebarDashboard.css";
 import { SidebarData } from "./SidebarData";

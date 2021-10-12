@@ -1,7 +1,6 @@
 import React from "react";
 import { FaAngleDown } from "react-icons/fa";
 import { FaSortAmountUpAlt } from "react-icons/fa";
-import { FaUserCog } from "react-icons/fa";
 import { FaCogs } from "react-icons/fa";
 import { FaUserInjured } from "react-icons/fa";
 import { IoPieChartSharp } from "react-icons/io5";

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import SidebarDashboard from "../components/sidebarDashboard";
 import MaterialTable from "material-table";
 import { FaPlus } from "react-icons/fa";
@@ -21,8 +21,7 @@ import Remove from "@material-ui/icons/Remove";
 import SaveAlt from "@material-ui/icons/SaveAlt";
 import Search from "@material-ui/icons/Search";
 import ViewColumn from "@material-ui/icons/ViewColumn";
-import axios from "axios";
-import jsPDF from "jspdf";
+// import axios from "axios";
 const tableIcons = {
   Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
   Check: forwardRef((props, ref) => <Check {...props} ref={ref} />),
@@ -65,17 +64,6 @@ const RegisterOrden = () => {
   //     }
   //     getEstados();
   //   }, []);
-
-  // Generar PDF con jsPDF
-  // const generatePDF = () => {
-  //   var doc = new jsPDF("p", "pt", "a4");
-  //   doc.html(document.querySelector("#register-orden"), {
-  //     callback: function (pdf) {
-  //       pdf.save("ordenes.pdf");
-  //     },
-  //   });
-  // };
-  // fin de generar pdf
 
   // fin de api de codigos postales
   const [navSidebar, setNavSidebar] = useState(true);
@@ -139,12 +127,13 @@ const RegisterOrden = () => {
 
   const sendDates = () => {
     console.log("aqui iran los datos");
-    let orden = document.querySelector("#orden");
-    let n_orden = orden.value;
+    let doc_orden = document.querySelector("#orden");
+    let n_orden = doc_orden.value;
     setOrden(n_orden);
-    console.log(n_orden, medico, servicio, paciente);
+    console.log(orden, medico, servicio, paciente);
   };
   // ---- fin de obtencion de los datos por onchange
+
   return (
     <>
       <SidebarDashboard navSidebar={navSidebar} show_sidebar={show_sidebar} />
@@ -245,9 +234,6 @@ const RegisterOrden = () => {
             </>
           ) : null}
         </div>
-        {/* <button className="btn btn-primary" onClick={generatePDF}>
-          Generate PDF
-        </button> */}
         <MaterialTable
           columns={columns}
           data={tabledata}

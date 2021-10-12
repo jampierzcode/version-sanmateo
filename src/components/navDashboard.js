@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaBell } from "react-icons/fa";
-import { FaTimes } from "react-icons/fa";
 import { FaAlignJustify } from "react-icons/fa";
 import "../styles/navDashboard.css";
 const navDashboard = (props) => {
@@ -10,7 +9,7 @@ const navDashboard = (props) => {
   return (
     <>
       <nav className={`navbar-dashboard ${!navSidebar ? "close_sidebar" : ""}`}>
-        <div className="drop-down-menu" onClick={show_sidebar}>
+        <div role="button" className="drop-down-menu" onClick={show_sidebar}>
           <FaAlignJustify />
         </div>
         <div className="user-login">

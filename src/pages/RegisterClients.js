@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import SidebarDashboard from "../components/sidebarDashboard";
 import MaterialTable from "material-table";
 import { FaPlus } from "react-icons/fa";
@@ -22,7 +22,7 @@ import Remove from "@material-ui/icons/Remove";
 import SaveAlt from "@material-ui/icons/SaveAlt";
 import Search from "@material-ui/icons/Search";
 import ViewColumn from "@material-ui/icons/ViewColumn";
-import axios from "axios";
+// import axios from "axios";
 
 const tableIcons = {
   Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
@@ -68,7 +68,7 @@ const RegisterClients = () => {
   //   }, []);
 
   // fin de api de codigos postales
-  var estados_parser;
+  // var estados_parser;
   const [navSidebar, setNavSidebar] = useState(true);
   const show_sidebar = () => {
     setNavSidebar(!navSidebar);
@@ -120,6 +120,7 @@ const RegisterClients = () => {
     console.log("aqui iran los datos");
     console.log(
       name,
+      calle,
       date,
       lastname,
       estados,
@@ -132,6 +133,7 @@ const RegisterClients = () => {
     );
   };
   // ---- fin de obtencion de los datos por onchange
+
   return (
     <>
       <SidebarDashboard navSidebar={navSidebar} show_sidebar={show_sidebar} />

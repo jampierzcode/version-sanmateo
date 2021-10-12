@@ -1,5 +1,3 @@
-import React from "react";
-
 export const DataClientes = [
   {
     name: "Jampier Smith Vasquez Mija",
