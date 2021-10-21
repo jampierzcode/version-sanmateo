@@ -52,7 +52,7 @@ DataOrdenesToday.forEach((e) => {
 const Administrador = () => {
   const [navSidebar, setNavSidebar] = useState(true);
 
-  const [tabledata, setTableData] = useState(DataOrdenesToday);
+  const [tabledata] = useState(DataOrdenesToday);
   const show_sidebar = () => {
     setNavSidebar(!navSidebar);
   };

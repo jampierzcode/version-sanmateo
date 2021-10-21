@@ -71,7 +71,7 @@ const RegisterOrden = () => {
     setNavSidebar(!navSidebar);
   };
   const [show_register, setShow_register] = useState(false);
-  const [tabledata, setTableData] = useState(DataOrdenes);
+  const [tabledata] = useState(DataOrdenes);
   const columns = [
     {
       title: "# Orden",

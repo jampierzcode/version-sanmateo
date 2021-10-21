@@ -74,7 +74,7 @@ const RegisterClients = () => {
     setNavSidebar(!navSidebar);
   };
   const [show_register, setShow_register] = useState(false);
-  const [tabledata, setTableData] = useState(DataClientes);
+  const [tabledata] = useState(DataClientes);
   const columns = [
     {
       title: "Nombres y Apellidos",

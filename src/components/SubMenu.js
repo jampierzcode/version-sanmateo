@@ -10,6 +10,7 @@ const SubMenu = ({ item, index }) => {
       <li
         key={index}
         className="links-menu-dashboard"
+        role="presentation"
         onClick={item.subNav && showSubnav}
       >
         <div className={`link-block ${subnav ? "link-active" : ""}`}>

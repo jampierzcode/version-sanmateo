@@ -12,13 +12,17 @@ const SidebarDashboard = (props) => {
   const logo_name =
     "https://imagenesrutalab.s3.amazonaws.com/sanmateo/logo/nombre_sanmateo_final+copy.png";
 
+  const handler_sidebar = () => {
+    show_sidebar();
+  };
   return (
     <>
       <div
         className={`overlay-sidebar ${
           !navSidebar ? "overlay-sidebar-show" : ""
         }`}
-        onClick={show_sidebar}
+        role="presentation"
+        onClick={handler_sidebar}
       ></div>
       <NavDashboard navSidebar={navSidebar} show_sidebar={show_sidebar} />
       <aside
